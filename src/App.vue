@@ -1,17 +1,16 @@
 <template>
-  <TestIndex></TestIndex>
+ <HeaderArea></HeaderArea>
+ <router-view></router-view>
 </template>
 
 <script>
-import TestIndex from './components/TestIndex.vue'
+import HeaderArea from './components/header/HeaderComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    TestIndex
+    HeaderArea
   }
 }
 </script>
 
-<style>
-</style>
