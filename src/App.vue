@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import HeaderArea from './components/header/HeaderComponent.vue'
+import HeaderArea from './components/header/HeaderWrap.vue'
 
 export default {
   name: 'App',
@@ -13,4 +13,3 @@ export default {
   }
 }
 </script>
-

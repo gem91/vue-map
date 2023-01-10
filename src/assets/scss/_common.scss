@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poor+Story&family=Roboto:wght@400;700&display=swap');
 @import '@/assets/scss/variables';
 
+*, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul{ list-style-type: none;}
+button{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
 
-
-$color-red : red;
+$text-color-white : #fff;
+$text-color-red : red;
 
 
