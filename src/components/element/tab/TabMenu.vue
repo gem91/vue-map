@@ -1,6 +1,12 @@
 <template>
   <ul class="tab_menus">
-    <li v-for="menu in tabMenuData" :key="menu.name" :class="{on : menu.isOn}">
+    <li
+    v-for="menu in tabMenuData" 
+    :key="menu.name" 
+    :class="{on : menu.isOn}"
+    :data-test="$attrs.data-tabMenu"
+    @click="handleTabMenu"
+    >
       <button ># {{ menu.name }}</button>
     </li>
   </ul>
@@ -8,12 +14,23 @@
 
 <script>
 export default {
+  inheritAttrs: false,
   props:{
     tabMenuData: {
       type: Object,
       default: null
     },
   },
+  methods:{
+    handleTabMenu(e){
+      const lists = document.querySelectorAll('.tab_menus li')
+      for( let i = 0; i < lists.length; i ++){
+        lists[i].classList.remove('on')
+      }
+      e.currentTarget.classList.add('on')
+      
+    }
+  }
 };
 </script>
 

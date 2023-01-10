@@ -81,6 +81,10 @@
         color: #fff;
         font-size: .9rem;
         background-color: #ff7100;
+        transition: .3s ease-in-out;
+        &:hover{
+          background-color: #de4c00;
+        }
       }
     }
   }
