@@ -28,19 +28,22 @@ export default {
     return {
       tabMenu: [
         {
+          tabNum: 0,
           name: "tab 1",
           href: "#tab1",
-          isOn: true,
+          isActive: true,
         },
         {
+          tabNum: 1,
           name: "tab 2",
           href: "#tab2",
-          isOn: false,
+          isActive: false,
         },
         {
+          tabNum: 2,
           name: "tab 3",
           href: "#tab3",
-          isOn: false,
+          isActive: false,
         },
       ],
       storeData: [

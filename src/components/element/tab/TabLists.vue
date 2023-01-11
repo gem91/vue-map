@@ -1,6 +1,6 @@
 <template>
   <div class="tab_wrap">
-    <TabMenu :tabMenuData="tabMenu" :data-tabMenu="tabMenu[0].length"></TabMenu>
+    <TabMenu :tabMenuData="tabMenu"></TabMenu>
     <!-- <font-awesome-icon icon="fa-brands fa-gratipay" /> -->
     <TabContents :tabContData="storeData"></TabContents>
   </div>

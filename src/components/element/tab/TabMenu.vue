@@ -3,8 +3,8 @@
     <li
     v-for="menu in tabMenuData" 
     :key="menu.name" 
-    :class="{on : menu.isOn}"
-    :data-test="$attrs.data-tabMenu"
+    :class="{ on : menu.isActive }"
+    :aria-tabMenu="`tab-${menu.tabNum}`"
     @click="handleTabMenu"
     >
       <button ># {{ menu.name }}</button>
@@ -20,6 +20,11 @@ export default {
       type: Object,
       default: null
     },
+  },
+  data() {
+    return {
+      isOnTabMenu: false
+    }
   },
   methods:{
     handleTabMenu(e){
